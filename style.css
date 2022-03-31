@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    background-color: hsl(218, 23%, 16%);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+   max-width: 400px;
+    background-color: hsl(217, 19%, 24%);
+    margin-bottom: 50px;
+    padding: 30px 30px 20px 30px;
+    position: relative;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.advice-id {
+    color: hsl(150, 100%, 66%);
+    font-size: 14px;
+    letter-spacing: 3px;
+    padding-bottom: 14px;
+    font-weight: 700;
+}
+
+.advice-actual {
+    color: rgb(213, 213, 213);
+    letter-spacing: 1.1px;
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.dice {
+    /* height: 50px;
+    width: 50px; */
+    border: none;
+    border-radius: 50%;
+    background-color: hsl(150, 100%, 66%);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -31px;
+    padding: 15px 17px;
+    cursor: pointer;
+}
+
+.dice:hover {
+    box-shadow: 0 0 25px hsl(150, 100%, 66%);
+}
+
+.divider-desktop {
+    width: 100%;
+    padding-bottom: 20px;
+    margin: 0 auto;
+}
+
+.attribution { 
+    font-size: 13px; 
+    text-align: center;
+    color: hsl(150, 100%, 66%);
+}
+
+.attribution a {
+     color: hsl(193, 38%, 86%); 
+}
+
+
+@media (max-width: 800px) {
+    .container {
+        margin: 0 12px 0;
+        padding: 20px;
+    }
+
+    .attribution {
+        margin-top: 50px;
+    }
+}
